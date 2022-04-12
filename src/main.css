@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+.next {
+    margin-left: 4vw;
+    width: 550px;
+    height: 400px;
+    background-size: cover;
+    background-image: url('/public/home.avif');
+    color: white;
+    border-radius: 30px 30px 0 0;
+}
+
+.nexttwo {
+    margin-left: 4vw;
+    width: 550px;
+    height: 80px;
+    text-align: center;
+    padding: 5px;
+    background-color: wheat;
+    border-radius: 0 0 30px 30px;
+
+}
+
+.wrapper {
+    display: inline-flex;
+    position: relative;
+    top: 21vh;
+}
+
+.wrapper .static-text {
+    font-size: 60px;
+    color: red;
+}
+
+.wrapper li {
+    list-style: none;
+    color: orange;
+    font-size: 60px;
+    position: relative;
+    top: 0;
+
+    animation: Calculate 8s steps(4) infinite;
+}
+
+@keyframes Calculate {
+    100% {
+        top: -320px;
+
+    }
+}
+
+.wrapper .dynamic-text {
+    margin-left: 15px;
+    line-height: 80px;
+    height: 80px;
+    overflow: hidden;
+
+}
+
+.dynamic-text li span {
+    position: relative;
+
+}
+
+.dynamic-text li span::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    position: absolute;
+    border-left: 2px solid red;
+    padding: 3px;
+    animation: collect 2s steps(10) infinite;
+}
+
+@keyframes collect {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.port {
+    font-size: 5vh;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 1000;
+    margin: 1vh 0 1vh 4vw;
+    color: blue;
+
+}
+
+.intro {
+    font-family: 'ubuntu', sans-serif;
+    /* width: 80%; */
+    display: flex;
+    /* height: 100%; */
+
+}
+
+.fix {
+    position: relative;
+    top: 20vh;
+}
+
+.lio {
+    color: red;
+}
+
+.main {
+    margin: 4vh 0 0 4vw;
+    font-size: 4vh;
+    width: 96%;
+    height: 100vh;
+}
+
+.element {
+    margin: 30px;
+    font-size: 3vh;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+header {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 8vw 1vh 0;
+    color: white;
+}
+
+header:hover {
+    background-color: black;
+    transition: all 1s ease;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.cord{
+    /* background-color: red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer {
+    background-color: #1D2130;
+    color: white;
+    width: 99vw;
+    height: 250px;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    line-height: 35px;
+}
+
+.column span {
+    font-size: 20px;
+}
+
+.column h1 {
+    font-size: 30px;
+}
+
+.Contact {
+    font-size: 30px;
+    color: red;
+    position: relative;
+    /* top: ; */
+    top: 80px;
+    height: 200px;
+    width: 50%;
+    left: 40%;
+    justify-content: center;
+}
+
+.Contact p {
+    color: black;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    margin-top: 15px;
+    text-decoration: solid;
+}
+
+.mess {
+
+    width: 80vw;
+    height: 40vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.Message {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.my {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    margin: 20px;
+    height: 50px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.text {
+    overflow: hidden;
+    margin: 20px;
+    font-size: 20px;
+    padding: 15px;
+
+
+}
+
+.me {
+    position: relative;
+    /* left: -10%;  */
+    top: 15%;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+}
+
+.me span {
+    color: red;
+}
+
+.submit {
+    color: white;
+    background-color: rgb(89, 89, 222);
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 20px;
+}
+.ball{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu',sans-serif;
+
+}
+
+.wrapper{
+    display: inline-flex;
+    position: relative;
+    /* top: 20; */
+}
+.wrapper .static-text{
+    font-size: 60px;
+    color: red;
+}
+.wrapper  li{
+    list-style: none;
+    color: orange;
+    font-size: 60px; 
+    position: relative; 
+    top: 0;  
+
+    animation: Calculate 8s steps(4) infinite;
+}
+@keyframes Calculate {
+    100%{
+        top: -320px;
+       
+    }
+}
+.wrapper .dynamic-text{
+    margin-left: 15px;
+    line-height: 80px;
+    height: 80px;
+    overflow: hidden;
+
+}
+.dynamic-text li span{
+    position: relative;
+
+}
+.dynamic-text li span::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    position: absolute;
+    border-left: 2px solid red;
+    padding: 3px;
+    animation: collect 2s steps(10) infinite;
+}
+@keyframes collect {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
